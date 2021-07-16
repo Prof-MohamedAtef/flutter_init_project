@@ -57,7 +57,37 @@ class _KFCDetailsState extends State<KFCDetails> {
                             ],
                           ))),
                 ),
-              )
+              ),
+              Container(
+                padding: EdgeInsets.all(10),
+                child: Text(
+                  'المواصفات',
+                  style: TextStyle(fontSize: 20),
+                ),
+              ),//start column container
+              Container(
+                padding: EdgeInsets.all(10),
+                child: Column(
+                  children: <Widget>[
+                    Container(
+                      padding: EdgeInsets.all(10),
+                      color: Colors.white,
+                      child: Row(children: [
+                        Text('الموديل : ', style: TextStyle(fontSize: 18),),
+                        Text('medium sandwitch size', style: TextStyle(fontSize: 18),),
+                      ],),
+                    ),
+                    Container (
+                      padding: EdgeInsets.all(10),
+                      color: Colors.white,
+                      child: Row(children: [
+                        Text('الشاشة : ', style: TextStyle(fontSize: 18),),
+                        Text('LG 18 inch', style: TextStyle(fontSize: 18),),
+                      ],),
+                    ),
+                  ],
+                ),
+              )//end of column container
             ],
           ),
         ));
