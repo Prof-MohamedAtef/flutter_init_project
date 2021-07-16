@@ -79,10 +79,26 @@ class _KFCDetailsState extends State<KFCDetails> {
                     ),
                     Container (
                       padding: EdgeInsets.all(10),
+                      color: Colors.blue,
+                      child: RichText(text: TextSpan(children: <TextSpan>[
+                        TextSpan(text: 'الشاشة : ', style: TextStyle(fontSize: 18, color: Colors.white),),
+                        TextSpan(text: 'LG 18 inch', style: TextStyle(fontSize: 18, color: Colors.white),),
+                      ]),)
+                    ),
+                    Container(
+                      padding: EdgeInsets.all(10),
                       color: Colors.white,
                       child: Row(children: [
-                        Text('الشاشة : ', style: TextStyle(fontSize: 18),),
-                        Text('LG 18 inch', style: TextStyle(fontSize: 18),),
+                        Text('الموديل : ', style: TextStyle(fontSize: 18),),
+                        Text('medium sandwitch size', style: TextStyle(fontSize: 18),),
+                      ],),
+                    ),
+                    Container (
+                      padding: EdgeInsets.all(10),
+                      color: Colors.blue,
+                      child: Row(children: [
+                        Text('الشاشة : ', style: TextStyle(fontSize: 18, color: Colors.white),),
+                        Text('LG 18 inch', style: TextStyle(fontSize: 18, color: Colors.white),),
                       ],),
                     ),
                   ],
