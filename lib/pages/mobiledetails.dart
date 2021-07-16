@@ -64,7 +64,7 @@ class _KFCDetailsState extends State<KFCDetails> {
                   'المواصفات',
                   style: TextStyle(fontSize: 20),
                 ),
-              ),//start column container
+              ), //start column container
               Container(
                 padding: EdgeInsets.all(10),
                 child: Column(
@@ -72,38 +72,72 @@ class _KFCDetailsState extends State<KFCDetails> {
                     Container(
                       padding: EdgeInsets.all(10),
                       color: Colors.white,
-                      child: Row(children: [
-                        Text('الموديل : ', style: TextStyle(fontSize: 18),),
-                        Text('medium sandwitch size', style: TextStyle(fontSize: 18),),
-                      ],),
+                      child: Row(
+                        children: [
+                          Text(
+                            'الموديل : ',
+                            style: TextStyle(fontSize: 18),
+                          ),
+                          Text(
+                            'medium sandwitch size',
+                            style: TextStyle(fontSize: 18),
+                          ),
+                        ],
+                      ),
                     ),
-                    Container (
-                      padding: EdgeInsets.all(10),
-                      color: Colors.blue,
-                      child: RichText(text: TextSpan(children: <TextSpan>[
-                        TextSpan(text: 'الشاشة : ', style: TextStyle(fontSize: 18, color: Colors.white),),
-                        TextSpan(text: 'LG 18 inch', style: TextStyle(fontSize: 18, color: Colors.white),),
-                      ]),)
-                    ),
+                    Container(
+                        width: MediaQuery.of(context).size.width,
+                        padding: EdgeInsets.all(10),
+                        color: Colors.blue,
+                        child: RichText(
+                          text: TextSpan(style: TextStyle(fontSize: 18,),children: <TextSpan>[
+                            TextSpan(
+                              text: 'الشاشة : ',
+                              style:
+                                  TextStyle(color: Colors.white),
+                            ),
+                            TextSpan(
+                              text: 'LG 18 inch',
+                              style:
+                                  TextStyle( color: Colors.white),
+                            ),
+                          ]),
+                        )),
                     Container(
                       padding: EdgeInsets.all(10),
                       color: Colors.white,
-                      child: Row(children: [
-                        Text('الموديل : ', style: TextStyle(fontSize: 18),),
-                        Text('medium sandwitch size', style: TextStyle(fontSize: 18),),
-                      ],),
+                      child: Row(
+                        children: [
+                          Text(
+                            'الموديل : ',
+                            style: TextStyle(fontSize: 18),
+                          ),
+                          Text(
+                            'medium sandwitch size',
+                            style: TextStyle(fontSize: 18),
+                          ),
+                        ],
+                      ),
                     ),
-                    Container (
+                    Container(
                       padding: EdgeInsets.all(10),
                       color: Colors.blue,
-                      child: Row(children: [
-                        Text('الشاشة : ', style: TextStyle(fontSize: 18, color: Colors.white),),
-                        Text('LG 18 inch', style: TextStyle(fontSize: 18, color: Colors.white),),
-                      ],),
+                      child: Row(
+                        children: [
+                          Text(
+                            'الشاشة : ',
+                            style: TextStyle(fontSize: 18, color: Colors.white),
+                          ),
+                          Text(
+                            'LG 18 inch',
+                            style: TextStyle(fontSize: 18, color: Colors.white),
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),
-              )//end of column container
+              ) //end of column container
             ],
           ),
         ));
