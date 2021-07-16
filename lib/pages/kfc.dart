@@ -133,7 +133,7 @@ class MobileList extends StatelessWidget{
         ),
       ),
       onTap: (){
-        print('details');
+        Navigator.of(context).pushNamed('kfcdetails');
       },);
   }
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mobtech/pages/home.dart';
 import 'package:mobtech/pages/categories.dart';
 import 'package:mobtech/pages/kfc.dart';
+import 'package:mobtech/pages/mobiledetails.dart';
 
 void main() => runApp(MyApp());
 
@@ -17,7 +18,8 @@ class MyApp extends StatelessWidget {
         routes:{
           'categories':(context){return Categories();},
           'homepage':(context){return Home();},
-          'kfc': (context){return Kfc();}
+          'kfc': (context){return Kfc();},
+          'kfcdetails': (context){return KFCDetails();},
         }
     );
   }
