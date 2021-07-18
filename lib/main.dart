@@ -3,6 +3,7 @@ import 'package:mobtech/pages/home.dart';
 import 'package:mobtech/pages/categories.dart';
 import 'package:mobtech/pages/kfc.dart';
 import 'package:mobtech/pages/mobiledetails.dart';
+import 'package:mobtech/pages/test.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'MobTech',
         theme: ThemeData(fontFamily: 'Cairo'),
-        home: Home(),
+        home: Test(),
         routes:{
           'categories':(context){return Categories();},
           'homepage':(context){return Home();},
